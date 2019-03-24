@@ -1,6 +1,6 @@
 # gamepad_teleop
 
-ROS node to control robot in teleop mode with USB game controller (SNES). Publishes to the `cmd_vel` topic.
+ROS node to control robot in teleop mode with D-pad or joystick of USB game controller. Publishes to the `cmd_vel` topic.
 
 To use:
 
