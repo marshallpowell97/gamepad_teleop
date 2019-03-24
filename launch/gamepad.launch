@@ -1,6 +1,6 @@
 
 <launch>
-    <node pkg="gamepad_teleop" type="gamepad.py" name="gamepad_control" output="screen">
+    <node pkg="gamepad_teleop" type="gamepad.py" name="teleop_twist_gamepad" output="screen">
         
     </node>
 </launch>
