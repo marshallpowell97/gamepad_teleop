@@ -19,9 +19,9 @@ def getButton():
           direction = "i"
        if(event.code == "ABS_Y" and event.state == 255):
           direction = ","
-       if(event.code == "BTN_PINKIE" and event.state == 1):
+       if(event.code == "MSC_SCAN" and event.state == 589829):
           direction = "L"
-       if(event.code == "BTN_TOP2" and event.state == 1):
+       if(event.code == "MSC_SCAN" and event.state == 589830):
           direction = "J"
        return direction
 
@@ -41,6 +41,12 @@ def gamepad():
       pub.publish(twist)
    if(button == "l"):
       twist.angular.z = -1
+      pub.publish(twist)
+   if(button == "J"):
+      twist.linear.y = 1
+      pub.publish(twist)
+   if(button == "L"):
+      twist.linear.y = -1
       pub.publish(twist)
 
 
